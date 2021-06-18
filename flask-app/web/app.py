@@ -65,6 +65,7 @@ def verify_weight(ticker, weight, assets):
     total = 0
     if weight <= 0:
         return False
+    weight = weight / 100
     for value in assets.values():
         total += value
     if total + weight <= 1:
