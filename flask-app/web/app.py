@@ -187,7 +187,10 @@ def asing_Assets(portfolio_list):
     if weight_bonds != 0:
         bechmarck.assets['AGG'] = weight_bonds
     if weight_cash != 0:
-        bechmarck.assets['SGOV'] = weight_cash
+        bechmarck.assets['GOVT'] = weight_cash
+    # SE COMENTA SGOV PORQUE TIENE SOLO PRECIOS HISTORICOS DESDE HACE UN ANO Y HACE EXPLOTAR TODU
+    # if weight_cash != 0:
+    #     bechmarck.assets['SGOV'] = weight_cash
     if weight_stocks != 0:
         bechmarck.assets['ACWI'] = weight_stocks
     return portfolio, bechmarck

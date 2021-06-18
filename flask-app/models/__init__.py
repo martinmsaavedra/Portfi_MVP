@@ -21,13 +21,11 @@ storage.reload()
 # models.storage.save()
 
 #PARA HACER LA POLULACION DE LA BASE DE DATOS LAS SIGUIENTE LINEAS DEBEN ESTAR COMENTADAS####
-user_admin = storage.get_object(User, "8c62d1970-0548-4bc0-ba24-89452d05fd6a")
+# user_admin = storage.get_object(User, "8c62d1970-0548-4bc0-ba24-89452d05fd6a")
 portfolio = storage.get_object(Portfolio, "337e9284-5113-4e8e-a52c-5277c65b9db0")
-# portfolio.assets = {"HYG":1}
-#port_ticker, _ = portfolio.make_assets_lists()
-
 bechmarck = storage.get_object(Portfolio, "9c153db1-bbc7-4e43-8e9b-b30164f96fbb")
-#portfolio = storage.get_object(Portfolio, "9c153db1-bbc7-4e43-8e9b-b30164f96fb0")
+
+# #port_ticker, _ = portfolio.make_assets_lists()
 # bench_ticker, _ = bechmarck.make_assets_lists()
 
 ##############################################################################################
