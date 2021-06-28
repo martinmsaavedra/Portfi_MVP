@@ -65,7 +65,6 @@ class DBStorage:
         objetos = self.__session.execute(SQLquery)
         for o in objetos.all():
             dates.append(o.date)
-        len_Dates = len(dates)
         prices = []
         dataFrame = pd.DataFrame(index=dates)
         dataFrame.index.name = "Date"
@@ -76,10 +75,8 @@ class DBStorage:
             prices = []
             for o in objetos.all():
                 prices.append(o.price)
-            len_prices = len(prices)
-            #print("len dates", len_Dates, len_prices, ticker)
-            if len_prices == len_Dates:
-                dataFrame[o.ticker] = prices
+            dataFrame[o.ticker] = prices
+        #print(dataFrame)
         return dataFrame, dates
         
     def get_object(self, cls, id):

@@ -35,7 +35,7 @@ PORTFI uses a number of open source projects to work properly:
 <h3>Architecture</h3>
 
 
-<img src="https://i.imgur.com/8QSF8MB.png>
+<img src="https://i.imgur.com/s25672S.png">
 
 
 <h3>Installation</h3>
@@ -99,6 +99,6 @@ Enjoy!
 **Matias Zappino** https://github.com/matiaszappino/
 
 
+<h3>Contributors</h3>
 
-
-
+**Nicolas Ribeiro** https://github.com/nikolasribeiro
